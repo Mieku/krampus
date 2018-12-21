@@ -78,4 +78,12 @@ public class GUIController : MonoBehaviour
             GameManager.Instance.Souls = GameManager.Instance.Souls - runCost;
         }
     }
+
+    public void CheatWin() {
+        GameManager.Instance.EndGame(true);
+    }
+
+    public void CheatLose() {
+        GameManager.Instance.EndGame(false);
+    }
 }

@@ -47,8 +47,10 @@ public class GameManager : MonoBehaviour
     public void EndGame (bool win) {
         if(win) {
             winPopUp.SetActive(true);
+            losePopUp.SetActive(false);
         } else {
             losePopUp.SetActive(true);
+            winPopUp.SetActive(false);
         }
     }
 }
